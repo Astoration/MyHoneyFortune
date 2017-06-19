@@ -6,13 +6,35 @@
     android:layout_height="match_parent"
     tools:context="kr.hs.sunrin.myhoneyfortune.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~두근두근 사랑의 이름 운세~"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="시작"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
