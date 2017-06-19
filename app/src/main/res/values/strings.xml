@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyHoneyFortune</string>
+    <string name="title_activity_fortune">FortuneActivity</string>
 </resources>
