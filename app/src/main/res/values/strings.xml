@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MyHoneyFortune</string>
-    <string name="title_activity_fortune">FortuneActivity</string>
+    <string name="app_name">영진이네 점집</string>
+    <string name="title_activity_fortune">영진이네 점집</string>
 </resources>
