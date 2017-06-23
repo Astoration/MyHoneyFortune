@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo"
+            android:src="@drawable/logo_fortune"
             android:adjustViewBounds="true"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
@@ -36,7 +36,7 @@
             android:textColor="#fff"
             android:textSize="25sp"
             android:onClick="onClick"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
     </LinearLayout>
