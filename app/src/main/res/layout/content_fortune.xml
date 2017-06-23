@@ -25,6 +25,7 @@
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:maxLength="3"
+                android:id="@+id/my_name"
                 android:singleLine="true"
                 android:hint="니 이름"/>
             <EditText
@@ -34,6 +35,7 @@
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:maxLength="3"
+                android:id="@+id/your_name"
                 android:singleLine="true"
                 android:hint="상대방 이름"/>
         </LinearLayout>
