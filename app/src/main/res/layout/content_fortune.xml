@@ -48,42 +48,48 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/myname1"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/yourname1"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/myname2"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/yourname2"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/myname3"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="아"
+                android:text=""
+                android:id="@+id/yourname3"
                 android:gravity="center"
                 android:textSize="50sp"/>
         </LinearLayout>
@@ -91,53 +97,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:id="@+id/firstLine"
             android:weightSum="6">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/secondLine"
             android:weightSum="6"
             android:orientation="horizontal">
             <Space
@@ -148,35 +156,35 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
         </LinearLayout>
@@ -184,6 +192,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="6"
+            android:id="@+id/thirdLine"
             android:orientation="horizontal">
             <Space
                 android:layout_width="0dp"
@@ -193,28 +202,28 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
         </LinearLayout>
@@ -222,6 +231,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="6"
+            android:id="@+id/fourthLine"
             android:orientation="horizontal">
             <Space
                 android:layout_width="0dp"
@@ -231,21 +241,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="0"
                 android:gravity="center"
                 android:textSize="50sp"/>
         </LinearLayout>
@@ -264,6 +274,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:id="@+id/percent"
                 android:text="99%"
                 android:gravity="center"
                 android:textSize="50sp"/>
