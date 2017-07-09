@@ -1,5 +1,6 @@
 package kr.hs.sunrin.myhoneyfortune;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -125,7 +126,7 @@ public class FortuneActivity extends AppCompatActivity {
                             List<String> list = HangulParser.disassemble(chars[i]);
                             int count = 0;
                             for (String element : list) {
-                                Log.e("data","data:"+element);
+                                if(!countList.containsKey(element)) continue;
                                 count += countList.get(element);
                             }
                             int index = i * 2;
@@ -176,15 +177,6 @@ public class FortuneActivity extends AppCompatActivity {
                 }
             }
         });
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     public void calcCollumn(){
@@ -214,6 +206,7 @@ public class FortuneActivity extends AppCompatActivity {
             }
         }
         ViewGroup fourthLine = (ViewGroup) findViewById(R.id.fourthLine);
+        count = 0;
         for(int i = 0 ; i<fourthLine.getChildCount();i++){
             if(fourthLine.getChildAt(i) instanceof TextView){
                 line4[count++] = (TextView) fourthLine.getChildAt(i);
@@ -237,6 +230,17 @@ public class FortuneActivity extends AppCompatActivity {
 
         percent = ((fourth[0]+fourth[1])%10)*10 + ((fourth[1]+fourth[2])%10);
         ((TextView)findViewById(R.id.percent)).setText(percent+"%");
+    }
+
+    public void onShare(View view){
+        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String subject = "당신의 궁합은...";
+        String text = myNameField.getText().toString()+"씨와 "+yourNameField.getText().toString()+"씨의 궁합은 "+percent+"% 입니다!" ;
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, text);
+        Intent chooser = Intent.createChooser(intent, "타이틀");
+        startActivity(chooser);
     }
 
 }
